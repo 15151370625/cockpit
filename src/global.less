@@ -1,0 +1,151 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: rgb(246, 245, 245);
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.page-header {
+  .ant-page-header.has-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 8px 24px;
+    overflow: hidden;
+  }
+
+  .ant-breadcrumb {
+    float: left;
+  }
+
+  .ant-breadcrumb + .ant-page-header-heading {
+    float: right;
+    margin: 0;
+  }
+
+  .extra-btn {
+    height: 24px;
+    padding: 0 10px;
+  }
+
+  .ant-layout {
+    min-height: 770px;
+    background-color: #fff;
+  }
+
+  .ant-layout-sider {
+    height: 770px;
+  }
+
+  .ant-layout-sider-children > ul {
+    height: 100%;
+  }
+
+  .ant-layout-has-sider > .ant-layout-content {
+    padding: 0 15px;
+  }
+}
+
+.container {
+  min-height: 840px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #fff;
+  .ant-table-wrapper,
+  .ant-tabs {
+    margin-top: 15px;
+  }
+}
+
+.form-search {
+  padding: 15px;
+  background-color: rgb(251, 251, 251);
+}
+
+.form-search-btn-left,
+.form-search-btn-right {
+  margin-top: 10px;
+}
+
+.form-search-btn-left {
+  float: left;
+}
+
+.form-search-btn-left button {
+  margin-right: 10px;
+}
+
+.form-search-btn-right {
+  float: right;
+}
+
+.form-search-btn-right button {
+  margin-left: 10px;
+}
+
+.dynamic-delete-button {
+  position: relative;
+  top: 4px;
+  margin: 0 8px;
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dynamic-delete-button:hover {
+  color: #777;
+}
